@@ -24,13 +24,11 @@ def bonus
 
   epic_tragedy.each do |level1|
     level1.each do |level2|
-      level2.each do |person|
-        unless person[:status] = "alive"
+        unless :level2[:status]= "alive"
           next
         else 
-          person[:status] = "dead"
+          :level2[:status]= "dead"
         end
-      end
     end  
   end
 
