@@ -28,9 +28,9 @@ def bonus
         unless person[:status] = "alive"
           next
         else 
-          person[:status]! = "dead"
+          person[:status] = "dead"
+        end
       end
-    end
   end
 
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
