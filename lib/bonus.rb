@@ -22,8 +22,8 @@ def bonus
 
   #code your solution here:
 
-  epic_tragedy.each |level1|
-    level1.each |level2|
+  epic_tragedy.each do |level1|
+    level1.each do |level2|
       level2.each do |person|
         unless person[:status] = "alive"
           next
@@ -31,6 +31,7 @@ def bonus
           person[:status] = "dead"
         end
       end
+    end  
   end
 
   #Don't touch the following line! The `bonus` method must return our newly modified epic tragedy hash
